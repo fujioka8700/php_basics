@@ -7,10 +7,10 @@
     @vite(['resources/css/index.css', 'resources/js/index.js'])
   </head>
   <body>
-    <h1>PHP Hello World</h1>
     @php
-      $msg = "Hello World";
+      $msg = 'hello';
       echo $msg;
+      var_dump($msg);
     @endphp
   </body>
 </html>
