@@ -8,10 +8,9 @@
   </head>
   <body>
     @php
-    define('PI', '3.141592');
-    echo PI;
-    PI = 3;
-    echo PI;
+    //var_dump(__LINE__); //今の行数
+    var_dump(__FILE__); //そのファイルまでのパス
+    // var_dump(__DIR__);  //ディレクトリのパス
     @endphp
   </body>
 </html>
