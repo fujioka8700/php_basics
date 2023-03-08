@@ -8,9 +8,9 @@
   </head>
   <body>
     @php
-    $colors = array("red","blue","yellow");
+    $colors2 = ["red","blue","yellow"];
 
-    var_dump($colors);
+    var_dump($colors2);
     @endphp
   </body>
 </html>
