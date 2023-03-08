@@ -8,9 +8,9 @@
   </head>
   <body>
     @php
-    $name = "konojunya";
+    $colors = array("red","blue","yellow");
 
-    echo 'My name is '. $name;
+    echo $colors[0];
     @endphp
   </body>
 </html>
