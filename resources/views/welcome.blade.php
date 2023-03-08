@@ -8,11 +8,13 @@
   </head>
   <body>
     <?php
-      function hello($name){
-        return "Hello ${name}";
-      }
+    $a = 20;
+    $b = 10;
 
-      echo hello("junya"); // Hello junya
+    if ($a > $b)
+      echo "aはbより大きい";
+    else
+      echo "aはbより小さい";
     ?>
   </body>
 </html>
