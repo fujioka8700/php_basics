@@ -9,12 +9,10 @@
   <body>
     <?php
       function hello($name){
-        echo $name;
-        echo "Hello ${name}";
+        return "Hello ${name}";
       }
 
-      hello("junya"); // Hello junya
-      // echo $name;
+      echo hello("junya"); // Hello junya
     ?>
   </body>
 </html>
