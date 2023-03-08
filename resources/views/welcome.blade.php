@@ -9,10 +9,12 @@
   <body>
     <?php
       function hello($name){
+        echo $name;
         echo "Hello ${name}";
       }
 
       hello("junya"); // Hello junya
+      // echo $name;
     ?>
   </body>
 </html>
