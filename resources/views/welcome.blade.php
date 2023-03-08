@@ -10,7 +10,7 @@
     @php
     $colors = array("red","blue","yellow");
 
-    echo $colors[0];
+    var_dump($colors);
     @endphp
   </body>
 </html>
