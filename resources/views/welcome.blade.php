@@ -8,9 +8,9 @@
   </head>
   <body>
     @php
-    //var_dump(__LINE__); //今の行数
-    var_dump(__FILE__); //そのファイルまでのパス
-    // var_dump(__DIR__);  //ディレクトリのパス
+    $name = "konojunya";
+
+    echo "My name is $name";
     @endphp
   </body>
 </html>
