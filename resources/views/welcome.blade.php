@@ -12,7 +12,7 @@
         echo "Hello World";
       }
 
-      hello(); //Hello World
+      hello();
     ?>
   </body>
 </html>
