@@ -8,9 +8,14 @@
   </head>
   <body>
     @php
-    $colors2 = ["red","blue","yellow"];
+    $members = [
+      "jun" => "konojunya",
+      "hoge" => "hogehogeo"
+    ];
 
-    var_dump($colors2);
+    var_dump($members);
+
+    echo $members["jun"];
     @endphp
   </body>
 </html>
