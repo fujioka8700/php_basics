@@ -10,9 +10,7 @@
     @php
     $name = "konojunya";
 
-    // echo "My name is $name";
-    echo "My name is ${name}";
-    // echo "My name is {$name}";
+    echo 'My name is '. $name;
     @endphp
   </body>
 </html>
