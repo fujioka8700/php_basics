@@ -7,10 +7,12 @@
     @vite(['resources/css/index.css', 'resources/js/index.js'])
   </head>
   <body>
-    <ul>
-      <?php for($i=0; $i<10; $i++): ?>
-      <li><?php echo $i ?></li>
-      <?php endfor; ?>
-    </ul>
+    <?php
+      function hello() {
+        echo "Hello World";
+      }
+
+      hello(); //Hello World
+    ?>
   </body>
 </html>
