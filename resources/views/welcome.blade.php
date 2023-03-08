@@ -8,11 +8,11 @@
   </head>
   <body>
     <?php
-      function hello() {
-        echo "Hello World";
+      function hello($name){
+        echo "Hello ${name}";
       }
 
-      hello();
+      hello("junya"); // Hello junya
     ?>
   </body>
 </html>
