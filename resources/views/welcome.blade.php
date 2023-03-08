@@ -7,15 +7,10 @@
     @vite(['resources/css/index.css', 'resources/js/index.js'])
   </head>
   <body>
-    @php
-    $members = [
-      "jun" => "konojunya",
-      "hoge" => "hogehogeo"
-    ];
-
-    var_dump($members);
-
-    echo $members["jun"];
-    @endphp
+    <ul>
+      <?php for($i=0; $i<10; $i++){ ?>
+      <li><?php echo $i ?></li>
+      <?php } ?>
+    </ul>
   </body>
 </html>
