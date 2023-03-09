@@ -8,11 +8,26 @@
   </head>
   <body>
     <?php
-    function hello() {
-      echo "Hello World";
+    class User {
+      //property
+      public $name;
+
+      //constructor
+      public function __construct($name){
+        $this->name = $name;
+      }
+
+      //method
+      public function sayName(){
+        echo "Hello $this->name !";
+      }
     }
 
-    hello();
+    $junya = new User("junya");
+
+    $junya->sayName();
+
+    echo $junya->name;
     ?>
   </body>
 </html>
