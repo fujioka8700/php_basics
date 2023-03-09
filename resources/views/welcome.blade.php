@@ -9,13 +9,13 @@
   <body>
     <?php
     class User {
-      public $name;
+      private $name;
 
       public function __construct($name){
         $this->name = $name;
       }
 
-      final public function sayHi(){
+      public function sayHi(){
         echo "Hello $this->name !";
       }
     }
@@ -31,6 +31,8 @@
 
     $junya->sayHi(); // Hello junya
     $kono->sayHi();  // I am Special kono
+
+    echo $junya->name;
     ?>
   </body>
 </html>
