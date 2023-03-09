@@ -8,11 +8,11 @@
   </head>
   <body>
     <?php
-    $i = 1;
-
-    while ($i <= 10) {
-      echo $i++;
+    function hello() {
+      echo "Hello World";
     }
+
+    hello();
     ?>
   </body>
 </html>
