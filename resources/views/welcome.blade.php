@@ -9,28 +9,23 @@
   <body>
     <?php
     class User {
-      protected $name;
-
+      public $name;
+      public static $count = 0;
       public function __construct($name){
         $this->name = $name;
+        self::$count++;
       }
-
-      public function sayHi(){
-        echo "Hello $this->name !";
-      }
-    }
-
-    class SpecialUser extends User {
-      public function sayHi(){
-        echo "I am Special $this->name";
+      public static function getMes(){
+        echo "Hello from static!";
       }
     }
 
-    $junya = new User("junya");       //Userクラス
-    $kono = new SpecialUser("kono");  //SPUserクラス
+    User::getMes();
 
-    $junya->sayHi(); // Hello junya
-    $kono->sayHi();  // I am Special kono
+    $tom = new User("tom");
+    $tom->getMes();
+
+    echo User::$count;
     ?>
   </body>
 </html>
