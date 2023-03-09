@@ -4,24 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Laravel Vite React</title>
-    @vite(['resources/css/index.css', 'resources/js/index.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
   </head>
   <body>
     <?php
-    $i = 2;
+    $i = 1;
 
-    switch ($i) {
-    case 0:
-      echo "iは0に等しい";
-      break;
-    case 1:
-      echo "iは1に等しい";
-      break;
-    case 2:
-      echo "iは2に等しい";
-      break;
-    default:
-      echo "iは0,1,2に等しくない";
+    while ($i <= 10) {
+      echo $i++;
     }
     ?>
   </body>
