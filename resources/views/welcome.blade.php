@@ -9,23 +9,28 @@
   <body>
     <?php
     class User {
-      //property
       public $name;
 
-      //constructor
       public function __construct($name){
         $this->name = $name;
       }
 
-      //method
-      public function sayName(){
+      public function sayHi(){
         echo "Hello $this->name !";
       }
     }
 
-    $junya = new User("junya");
+    class SpecialUser extends User {
+      public function saySpecialHi(){
+        echo "I am Special $this->name";
+      }
+    }
 
-    $junya->sayName();
+    $junya = new SpecialUser("junya");
+
+    $junya->saySpecialHi();
+
+    $junya->sayHi();
 
     echo $junya->name;
     ?>
