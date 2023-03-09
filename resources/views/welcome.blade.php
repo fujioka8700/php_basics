@@ -21,18 +21,16 @@
     }
 
     class SpecialUser extends User {
-      public function saySpecialHi(){
+      public function sayHi(){
         echo "I am Special $this->name";
       }
     }
 
-    $junya = new SpecialUser("junya");
+    $junya = new User("junya");       //Userクラス
+    $kono = new SpecialUser("kono");  //SPUserクラス
 
-    $junya->saySpecialHi();
-
-    $junya->sayHi();
-
-    echo $junya->name;
+    $junya->sayHi(); // Hello junya
+    $kono->sayHi();  // I am Special kono
     ?>
   </body>
 </html>
