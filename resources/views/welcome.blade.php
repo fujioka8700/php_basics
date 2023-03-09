@@ -9,7 +9,7 @@
   <body>
     <?php
     class User {
-      private $name;
+      protected $name;
 
       public function __construct($name){
         $this->name = $name;
@@ -31,8 +31,6 @@
 
     $junya->sayHi(); // Hello junya
     $kono->sayHi();  // I am Special kono
-
-    echo $junya->name;
     ?>
   </body>
 </html>
