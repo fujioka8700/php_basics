@@ -15,7 +15,7 @@
         $this->name = $name;
       }
 
-      public function sayHi(){
+      final public function sayHi(){
         echo "Hello $this->name !";
       }
     }
