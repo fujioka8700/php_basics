@@ -9,7 +9,7 @@
   <body>
     @php
     $msg = 'hello';
-    echo $msg;
+    echo var_dump($msg);
     @endphp
   </body>
 </html>
