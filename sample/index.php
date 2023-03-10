@@ -1,7 +1,9 @@
 <?php
 
-require('vendor/autoload.php');
+require('src/User.php');
 
-$user = new Kunio\User('kunio');
+use Kunio\User;
+
+$user = new User('kunio');
 
 var_dump($user->get_user_name());
