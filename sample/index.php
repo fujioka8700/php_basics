@@ -2,6 +2,6 @@
 
 require('vendor/autoload.php');
 
-$user = new Test\User('taro');
+$user = new Kunio\User('kunio');
 
 var_dump($user->get_user_name());
