@@ -8,8 +8,9 @@
   </head>
   <body>
     @php
-    $msg = 'hello';
-    echo var_dump($msg);
+    define("PI", 3.141592);
+
+    echo PI;
     @endphp
   </body>
 </html>
