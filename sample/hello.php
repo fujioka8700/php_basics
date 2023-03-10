@@ -1,7 +1,7 @@
 <?php
 
 include_once 'functions.php';
-// require_once 'functions.php';
-// require 'functions.php';
 
-hello();
+use junya\functions as func;
+
+func\hello();
