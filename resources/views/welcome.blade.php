@@ -8,11 +8,9 @@
   </head>
   <body>
     @php
-    define("PI", 3.141592);
-
-    PI = 3;
-
-    echo PI;
+    echo __LINE__;
+    echo __FILE__;
+    echo __DIR__;
     @endphp
   </body>
 </html>
