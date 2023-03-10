@@ -8,11 +8,23 @@
   </head>
   <body>
     @php
-    function Hello($name) {
-      echo "Hello {$name} !!";
+    class User {
+      //property
+      public $name;
+
+      //constructor
+      public function __construct($name){
+        $this->name = $name;
+      }
+
+      //method
+      public function sayName(){
+        echo "Hello $this->name !";
+      }
     }
 
-    Hello("たかし");
+    $user = new User("たかし");
+    $user->sayName();
     @endphp
   </body>
 </html>
