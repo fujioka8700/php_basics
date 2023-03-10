@@ -8,10 +8,15 @@
   </head>
   <body>
     @php
-    $colors = ["赤", "黄", "青"];
+    $jun = "今野潤";
 
-    foreach ($colors as $color) {
-      echo $color . nl2br(PHP_EOL);
+    $members = [
+      "jun" => $jun,
+      "kunio" => "くにお",
+    ];
+
+    foreach ($members as $member => $value) {
+      echo $member . ":" . $value;
     }
     @endphp
   </body>
