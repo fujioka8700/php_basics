@@ -8,16 +8,11 @@
   </head>
   <body>
     @php
-    $jun = "今野潤";
-
-    $members = [
-      "jun" => $jun,
-      "kunio" => "くにお",
-    ];
-
-    foreach ($members as $member => $value) {
-      echo $member . ":" . $value;
+    function Hello($name) {
+      echo "Hello {$name} !!";
     }
+
+    Hello("たかし");
     @endphp
   </body>
 </html>
