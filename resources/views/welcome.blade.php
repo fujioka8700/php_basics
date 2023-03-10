@@ -8,19 +8,25 @@
   </head>
   <body>
     @php
-    abstract class BaseUser{ //抽象クラス
-      public $name;
-      abstract public function sayHi();
+    interface sayHi {
+      public function sayHi(); //interfaceは絶対public
+    }
+    interface sayHello{
+      public function sayHello();
     }
 
-    class User extends BaseUser{
+    class User implements sayHi,sayHello {
       public function sayHi(){
-        echo "Hello";
+        echo "Hi!";
+      }
+      public function sayHello(){
+        echo "hello";
       }
     }
 
-    $user = new User;
+    $user = new User();
     $user->sayHi();
+    $user->sayHello();
     @endphp
   </body>
 </html>
