@@ -9,7 +9,7 @@
   <body>
     @php
     class User {
-      public $name;
+      protected $name;
 
       public function __construct($name) {
         $this->name = $name;
@@ -35,6 +35,8 @@
 
     $takashi = new SpecialUser("たかし");
     $takashi->sayHi();
+
+    echo $takashi->name;
     @endphp
   </body>
 </html>
