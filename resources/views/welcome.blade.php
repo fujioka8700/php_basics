@@ -24,11 +24,16 @@
       public function saySpecialHi() {
         echo "I am Special $this->name";
       }
+
+      public function sayHi() {
+        echo "こんにちは $this->name !";
+      }
     }
 
-    $takashi = new SpecialUser("たかし");
+    $riki = new User("りき");
+    $riki->sayHi();
 
-    $takashi->saySpecialHi();
+    $takashi = new SpecialUser("たかし");
     $takashi->sayHi();
     @endphp
   </body>
