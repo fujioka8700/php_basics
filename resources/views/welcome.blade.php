@@ -10,9 +10,11 @@
     @php
     class User {
       protected $name;
+      public static $count = 0;
 
       public function __construct($name) {
         $this->name = $name;
+        self::$count++;
       }
 
       public function sayHi() {
@@ -36,7 +38,7 @@
     $takashi = new SpecialUser("たかし");
     $takashi->sayHi();
 
-    echo $takashi->name;
+    echo User::$count;
     @endphp
   </body>
 </html>
