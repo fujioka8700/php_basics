@@ -8,21 +8,34 @@
   </head>
   <body>
     <?php
-    abstract class BaseUser { //抽象クラス
-      private $name;
-      abstract public function sayHi();
+    interface sayHi {
+      public function sayHi(); //interfaceは絶対public
+    }
+    interface sayHello {
+      public function sayHello();
     }
 
-    class User extends BaseUser {
-      private $name = "tanaka";
-      public function sayHi(){
-        echo "Hello {$this->name}";
+    interface byeBye {
+      public function byeBye();
+    }
+
+    class User implements sayHi, sayHello, byeBye {
+      public function sayHi() {
+        echo "Hi!";
+      }
+      public function sayHello() {
+        echo "hello";
+
+        $this->byeBye();
+      }
+      public function byeBye() {
+        echo "bye";
       }
     }
 
     $user = new User();
     $user->sayHi();
-    echo $user->name;
+    $user->sayHello();
     ?>
   </body>
 </html>
