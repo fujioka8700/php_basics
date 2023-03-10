@@ -8,9 +8,9 @@
   </head>
   <body>
     @php
-    echo __LINE__;
-    echo __FILE__;
-    echo __DIR__;
+    $name = "Taro";
+
+    echo "My name is {$name}";
     @endphp
   </body>
 </html>
