@@ -9,10 +9,13 @@
   <body>
     @php
     function division($num1,$num2){
-      if($num2 === 0){
-        return "2つ目に0は指定できません。";
-      }else{
+      try {
+        if($num2 === 0){
+          throw new Exception("can not use 0");
+        }
         return $num1 / $num2;
+      } catch (Exception $e) {
+        return $e->getMessage();
       }
     }
 
