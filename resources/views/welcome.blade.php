@@ -9,10 +9,14 @@
   <body>
     @php
       function division($num1,$num2) {
-        return $num1 / $num2;
+        if($num2 === 0) {
+          return "2つ目に0は指定できません。";
+        } else {
+          return $num1 / $num2;
+        }
       }
 
-      echo division(4, 2); // 2
+      echo division(4, 0);
     @endphp
   </body>
 </html>
