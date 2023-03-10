@@ -7,35 +7,12 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
   </head>
   <body>
-    <?php
-    interface sayHi {
-      public function sayHi(); //interfaceは絶対public
-    }
-    interface sayHello {
-      public function sayHello();
-    }
-
-    interface byeBye {
-      public function byeBye();
-    }
-
-    class User implements sayHi, sayHello, byeBye {
-      public function sayHi() {
-        echo "Hi!";
+    @php
+      function division($num1,$num2) {
+        return $num1 / $num2;
       }
-      public function sayHello() {
-        echo "hello";
 
-        $this->byeBye();
-      }
-      public function byeBye() {
-        echo "bye";
-      }
-    }
-
-    $user = new User();
-    $user->sayHi();
-    $user->sayHello();
-    ?>
+      echo division(4, 2); // 2
+    @endphp
   </body>
 </html>
