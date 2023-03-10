@@ -8,24 +8,21 @@
   </head>
   <body>
     <?php
-    class User {
-      public $name;
-      public static $count = 0;
-      public function __construct($name){
-        $this->name = $name;
-        self::$count++;
-      }
-      public static function getMes(){
-        echo "Hello from static!";
+    abstract class BaseUser { //抽象クラス
+      private $name;
+      abstract public function sayHi();
+    }
+
+    class User extends BaseUser {
+      private $name = "tanaka";
+      public function sayHi(){
+        echo "Hello {$this->name}";
       }
     }
 
-    User::getMes();
-
-    $tom = new User("tom");
-    $tom->getMes();
-
-    echo User::$count;
+    $user = new User();
+    $user->sayHi();
+    echo $user->name;
     ?>
   </body>
 </html>
