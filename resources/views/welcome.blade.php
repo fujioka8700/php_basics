@@ -8,18 +8,8 @@
   </head>
   <body>
     @php
-      function division($num1,$num2) {
-        try {
-          if($num2 === 0) {
-            throw new Exception("can not use 0");
-          }
-          return $num1 / $num2;
-        } catch (Exception $e) {
-          return $e->getMessage();
-        }
-      }
-
-      echo division(4, 0);
+    $msg = 'hello';
+    echo $msg;
     @endphp
   </body>
 </html>
