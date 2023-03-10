@@ -8,25 +8,11 @@
   </head>
   <body>
     @php
-    interface sayHi {
-      public function sayHi(); //interfaceは絶対public
-    }
-    interface sayHello{
-      public function sayHello();
+    function division($num1,$num2){
+      return $num1 / $num2;
     }
 
-    class User implements sayHi,sayHello {
-      public function sayHi(){
-        echo "Hi!";
-      }
-      public function sayHello(){
-        echo "hello";
-      }
-    }
-
-    $user = new User();
-    $user->sayHi();
-    $user->sayHello();
+    echo division(4,2); // 2
     @endphp
   </body>
 </html>

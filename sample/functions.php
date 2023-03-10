@@ -1,8 +1,8 @@
 <?php
 
-namespace junya\functions;
+namespace kunio\functions;
 
 function hello()
 {
-  echo "Hello";
+  echo 'Hello' . PHP_EOL;
 }
