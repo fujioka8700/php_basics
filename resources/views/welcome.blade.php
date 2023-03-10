@@ -9,22 +9,27 @@
   <body>
     @php
     class User {
-      //property
       public $name;
 
-      //constructor
-      public function __construct($name){
+      public function __construct($name) {
         $this->name = $name;
       }
 
-      //method
-      public function sayName(){
+      public function sayHi() {
         echo "Hello $this->name !";
       }
     }
 
-    $user = new User("たかし");
-    $user->sayName();
+    class SpecialUser extends User {
+      public function saySpecialHi() {
+        echo "I am Special $this->name";
+      }
+    }
+
+    $takashi = new SpecialUser("たかし");
+
+    $takashi->saySpecialHi();
+    $takashi->sayHi();
     @endphp
   </body>
 </html>
