@@ -10,6 +10,8 @@
     @php
     define("PI", 3.141592);
 
+    PI = 3;
+
     echo PI;
     @endphp
   </body>
