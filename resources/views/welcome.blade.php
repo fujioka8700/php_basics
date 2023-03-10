@@ -8,9 +8,11 @@
   </head>
   <body>
     @php
-    $name = "Taro";
+    $colors = ["赤", "黄", "青"];
 
-    echo "My name is " . $name;
+    foreach ($colors as $color) {
+      echo $color . nl2br(PHP_EOL);
+    }
     @endphp
   </body>
 </html>
